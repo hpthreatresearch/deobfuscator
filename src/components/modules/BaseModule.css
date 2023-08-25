@@ -1,0 +1,50 @@
+.base-module {
+  border: 1px solid #38512d;
+  color: #38512d;
+  cursor: move;
+}
+
+.base-module-title {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  background-color: #dff0d8;
+}
+
+.base-module-title > .icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.base-module-content {
+  padding: 12px 25px;
+  padding-top: 0px;
+  background-color: #f2f9ef;
+  border-top: 1px solid #38512d;
+  display: flex;
+  flex-direction: column;
+}
+
+.base-module-content > * {
+  margin-top: 12px;
+}
+
+.labeled-checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.labeled-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.labeled-input > div {
+  margin-right: 10px;
+}
+
+.monospace {
+  font-family: monospace;
+}

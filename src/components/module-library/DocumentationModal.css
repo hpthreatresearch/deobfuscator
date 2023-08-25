@@ -1,0 +1,16 @@
+.documentation-modal > .modal-dialog {
+  max-width: 75vh;
+}
+
+.documentation-modal > * > * > .modal-body {
+  height: 75vh;
+  max-height: 75vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.documentation-md {
+  padding: 15px;
+  word-wrap: normal;
+}

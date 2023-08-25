@@ -1,0 +1,132 @@
+{
+  "CF": [
+    {
+      "params": { "allowedEval": [], "forcedConstant": "#CONSTANT#" },
+      "name": "Constant folding",
+      "elevation": 0
+    }
+  ],
+  "JSFuck": [
+    {
+      "params": { "comment": "JSFuck recipe" },
+      "name": "Comment",
+      "elevation": 0
+    },
+    {
+      "params": {
+        "allowedEval": [],
+        "forcedConstant": "#CONSTANT#",
+        "evalLists": true
+      },
+      "name": "Constant folding",
+      "elevation": 0
+    },
+    {
+      "params": {
+        "allowedEval": ["toString", "toFixed", "fontcolor", "italics"],
+        "forcedConstant": "#CONSTANT#",
+        "evalLists": true
+      },
+      "name": "Constant folding",
+      "elevation": 0
+    },
+    {
+      "params": {
+        "find": "[][\"filter\"][\"constructor\"]",
+        "replace": "Function"
+      },
+      "name": "Replace expression with",
+      "elevation": 0
+    },
+    {
+      "params": { "find": "Function(\"return this\")()", "replace": "window" },
+      "name": "Replace expression with",
+      "elevation": 0
+    },
+    {
+      "params": {
+        "allowedEval": ["escape", "unescape", "concat"],
+        "forcedConstant": "#CONSTANT#",
+        "evalLists": true
+      },
+      "name": "Constant folding",
+      "elevation": 0
+    },
+    { "params": {}, "name": "Inline Function", "elevation": 0 }
+  ],
+  "obfuscator.io": [
+    { "params": {}, "name": "Remove comma operator", "elevation": 0 },
+    { "params": {}, "name": "Remove hex in ints", "elevation": 0 },
+    { "params": {}, "name": "Remove hex in strings", "elevation": 0 },
+    { "params": {}, "name": "Separate declarators", "elevation": 0 },
+    {
+      "params": {
+        "steps": 0,
+        "modules": [
+          {
+            "params": { "allowedEval": [], "forcedConstant": "#CONSTANT#" },
+            "name": "Constant folding",
+            "elevation": 1
+          },
+          {
+            "params": { "keep": true, "ignore": "[#NOT PROXY#]" },
+            "name": "Remove proxy functions",
+            "elevation": 1
+          },
+          {
+            "params": { "allowedEval": [], "forcedConstant": "#CONSTANT#" },
+            "name": "Constant folding",
+            "elevation": 1
+          },
+          {
+            "params": { "keep": true, "ignore": "[#NOT PROXY#]" },
+            "name": "Remove proxy objects",
+            "elevation": 1
+          },
+          {
+            "params": { "allowedEval": [], "forcedConstant": "#CONSTANT#" },
+            "name": "Constant folding",
+            "elevation": 1
+          },
+          {
+            "params": {
+              "fName": "_0x7cfa",
+              "offset": -15,
+              "tableName": "_0x29ca",
+              "alphabet": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=",
+              "useRC4": true
+            },
+            "name": "obfuscator.io rc4",
+            "elevation": 1
+          },
+          { "params": {}, "name": "Remove alias", "elevation": 1 }
+        ],
+        "iterations": 7
+      },
+      "name": "Loop",
+      "elevation": 0
+    },
+    {
+      "params": {
+        "steps": 0,
+        "modules": [
+          { "params": {}, "name": "Remove unused variables", "elevation": 1 },
+          { "params": {}, "name": "Remove dead branches", "elevation": 1 },
+          {
+            "params": { "keep": false, "ignore": "[#NOT PROXY#]" },
+            "name": "Remove proxy objects",
+            "elevation": 1
+          },
+          {
+            "params": { "allowedEval": [], "forcedConstant": "#CONSTANT#" },
+            "name": "Constant folding",
+            "elevation": 1
+          }
+        ],
+        "iterations": 3
+      },
+      "name": "Loop",
+      "elevation": 0
+    }
+  ]
+}

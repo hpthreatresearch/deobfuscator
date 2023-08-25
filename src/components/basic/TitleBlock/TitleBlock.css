@@ -1,0 +1,23 @@
+.title-block {
+  padding-left: 10px;
+  background-color: var(--black-50);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-block > h3 {
+  font-size: 1.2rem;
+}
+
+.title-block > div > * {
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+
+.title-block > div > *:active {
+  color: var(--black-300);
+  transition: none;
+}

@@ -1,0 +1,20 @@
+.module-library-title {
+  width: 100%;
+  background-color: var(--black-100);
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  border: solid 1px var(--black-100);
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.module-library-title.expanded {
+  background-color: var(--black-50);
+}
+
+.module-library-title > .chevron {
+  margin-left: auto;
+}

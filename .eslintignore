@@ -1,0 +1,11 @@
+.eslintrc.cjs
+jest.config.ts
+config-overrides.cjs
+
+*.js
+
+/src/core/config/scripts/playground.ts
+
+__tests__/*
+
+/tests/jest-setup.ts

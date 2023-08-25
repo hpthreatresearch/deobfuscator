@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`obfuscator.io recipe 1`] = `
+{
+  "value": "(function () {  function hi() {    console.log("Hello, World!");  }  hi();})();",
+}
+`;
