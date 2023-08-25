@@ -2,10 +2,9 @@
 
 _We are looking for a better name_
 
-
 This tool is a simple web app for deobfuscating JavaScript code using a library of modules. You can choose and configure what modules you want for a given task. Every module comes with a comprehensive documentation and example. When you are happy with your work, you can save it as a JSON and share it.
 
-The tool is designed for all levels. From familiarizing yourself with the different modules on small code snippets, stepping through recipes to writing your own modules, this tool has you covered. 
+The tool is designed for all levels. From familiarizing yourself with the different modules on small code snippets, stepping through recipes to writing your own modules, this tool has you covered.
 
 This tool was heavily inspired by [CyberChef](https://github.com/gchq/CyberChef).
 
@@ -17,9 +16,7 @@ This tool was heavily inspired by [CyberChef](https://github.com/gchq/CyberChef)
 
 ## Usage
 
-[Check out the demo](https://pages.github.com/hpthreatresearch/deobfuscator/)
-
-This tool is still under active development.  There is still testing and bug fixing to do, new features to be added and additional documentation to write. Please contribute!
+This tool is still under active development. There is still testing and bug fixing to do, new features to be added and additional documentation to write. Please contribute!
 
 ### Running the web client
 
@@ -38,7 +35,7 @@ TODO: Not supported but a planned feature
 
 ### Creating new modules
 
-To create a new module, after cloning the module and installing the dependencies,  run `npm run new` and follow the onscreen instructions.
+To create a new module, after cloning the module and installing the dependencies, run `npm run new` and follow the onscreen instructions.
 
 You are highly encouraged to create documentation as you go for your modules, **especially if you intend on sharing them**.
 
